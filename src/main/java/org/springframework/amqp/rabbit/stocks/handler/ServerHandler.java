@@ -18,6 +18,7 @@ package org.springframework.amqp.rabbit.stocks.handler;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.amqp.rabbit.stocks.domain.TradeRequest;
 import org.springframework.amqp.rabbit.stocks.domain.TradeResponse;
 import org.springframework.amqp.rabbit.stocks.service.CreditCheckService;
@@ -52,6 +53,7 @@ public class ServerHandler {
 		this.tradingService = tradingService;
 	}
 
+    @RabbitListener(queues = "#{stockRequestQueue.name}")
 	public TradeResponse handleMessage(TradeRequest tradeRequest)
 	{
         TradeResponse tradeResponse;

@@ -1,5 +1,6 @@
 org/springframework/amqp/rabbit/stocks/gateway/RabbitMarketDataGateway$1.class
 org/springframework/amqp/rabbit/stocks/gateway/MarketDataGateway.class
+org/springframework/amqp/rabbit/stocks/web/HomeController.class
 org/springframework/amqp/rabbit/stocks/AppConfig.class
 org/springframework/amqp/rabbit/stocks/service/CreditCheckService.class
 org/springframework/amqp/rabbit/stocks/domain/StockExchange.class

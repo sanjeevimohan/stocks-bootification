@@ -4,6 +4,7 @@ import org.springframework.amqp.rabbit.stocks.gateway.MarketDataGateway;
 import org.springframework.amqp.rabbit.stocks.gateway.RabbitMarketDataGateway;
 import org.springframework.amqp.rabbit.stocks.gateway.RabbitStockServiceGateway;
 import org.springframework.amqp.rabbit.stocks.gateway.StockServiceGateway;
+import org.springframework.amqp.rabbit.stocks.handler.ServerHandler;
 import org.springframework.amqp.rabbit.stocks.service.CreditCheckService;
 import org.springframework.amqp.rabbit.stocks.service.ExecutionVenueService;
 import org.springframework.amqp.rabbit.stocks.service.TradingService;
@@ -50,5 +51,12 @@ public class AppConfig {
     public StockServiceGateway stockServiceGateway() {
         RabbitStockServiceGateway stockServiceGateway = new RabbitStockServiceGateway();
         return stockServiceGateway;
+    }
+
+    @Bean
+    public ServerHandler serverHandler(@Autowired ExecutionVenueService executionVenueService,
+                                       @Autowired CreditCheckService creditCheckService,
+                                       @Autowired TradingService tradingService){
+        return new ServerHandler(executionVenueService, creditCheckService, tradingService);
     }
 }

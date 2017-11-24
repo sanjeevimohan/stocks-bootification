@@ -74,7 +74,7 @@ public class RabbitMarketDataGateway implements MarketDataGateway {
 	public void sendMarketData() {
 		Quote quote = generateFakeQuote();
 		Stock stock = quote.getStock();
-		//logger.info("Sending Market Data for " + stock.getTicker());
+		logger.info("Sending Market Data for " + stock.getTicker());
 		String routingKey = "app.stock.quotes."+ stock.getStockExchange() + "." + stock.getTicker();
 		template.convertAndSend(topic.getName(), routingKey, quote);
 	}

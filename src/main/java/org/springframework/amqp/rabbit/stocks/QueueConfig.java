@@ -14,15 +14,14 @@ public class QueueConfig {
 		return new FanoutExchange("broadcast.responses");
 	}
 
-
 	@Bean
-	public Queue autoDeleteQueue1() {
+	public Queue stockRequestQueue() {
 		return new AnonymousQueue();
 	}
 
 	@Bean
-	public Binding binding1(FanoutExchange fanout, Queue autoDeleteQueue1) {
-		return BindingBuilder.bind(autoDeleteQueue1).to(fanout);
+	public Binding bindingStockRequestQueueToFanout(FanoutExchange fanout, Queue stockRequestQueue) {
+		return BindingBuilder.bind(stockRequestQueue).to(fanout);
 	}
 
 	@Bean
@@ -31,13 +30,13 @@ public class QueueConfig {
 	}
 
 	@Bean
-	public Queue autoDeleteQueue2() {
+	public Queue marketDataQueue() {
 		return new AnonymousQueue();
 	}
 
 	@Bean
-	public Binding binding2(TopicExchange topic, Queue autoDeleteQueue2) {
-		return BindingBuilder.bind(autoDeleteQueue2).to(topic).with("app.stock.quotes.nasdaq.*");
+	public Binding bindingMarketDataQueueWithTopic(TopicExchange topic, Queue marketDataQueue) {
+		return BindingBuilder.bind(marketDataQueue).to(topic).with("app.stock.quotes.nasdaq.*");
 	}
 
 	@Bean

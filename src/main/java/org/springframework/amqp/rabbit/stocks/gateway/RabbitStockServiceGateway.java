@@ -17,6 +17,7 @@
 package org.springframework.amqp.rabbit.stocks.gateway;
 
 import java.io.UnsupportedEncodingException;
+import java.nio.charset.Charset;
 import java.util.UUID;
 
 import org.springframework.amqp.AmqpException;
@@ -26,6 +27,7 @@ import org.springframework.amqp.core.MessagePostProcessor;
 import org.springframework.amqp.rabbit.core.RabbitGatewaySupport;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.amqp.rabbit.stocks.domain.TradeRequest;
+import org.springframework.amqp.rabbit.support.CorrelationData;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
@@ -53,17 +55,17 @@ public class RabbitStockServiceGateway implements StockServiceGateway {
 	@Autowired
 	private RabbitTemplate template;
 
+	//private final Charset UTF8_CHARSET = Charset.forName("UTF-8");
+
 	public void send(TradeRequest tradeRequest) {
-		System.out.println("*****Stock purchase request*****");
-		System.out.println(defaultReplyTo);
-		template.convertAndSend(fanout.getName(), "", tradeRequest, new MessagePostProcessor() {
+		template.convertAndSend(fanout.getName(), "app.stock.request", tradeRequest, new MessagePostProcessor() {
 			public Message postProcessMessage(Message message) throws AmqpException {
 				message.getMessageProperties().setReplyTo(defaultReplyTo);
-				message.getMessageProperties().setCorrelationIdString(UUID.randomUUID().toString());
+
+				//message.getMessageProperties().setCorrelationId(UUID.randomUUID().toString().getBytes(UTF8_CHARSET));
 				return message;
 			}
-		});
-		//template.convertAndSend(fanout.getName(), "", tradeRequest);
+		}, new CorrelationData(UUID.randomUUID().toString()));
 	}
 
 }

@@ -1,2 +1,5 @@
 stocks.quote.pattern: app.stock.quotes.nasdaq.*
 defaultReplyTo: fanout://broadcast.responses/
+spring:
+  mvc.view:
+    suffix: .jsp
