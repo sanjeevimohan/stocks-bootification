@@ -2,25 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="895b6d74-79dd-4eff-94da-58daaa07d1d9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/springframework/amqp/rabbit/stocks/AppConfig.class" afterPath="$PROJECT_DIR$/target/classes/org/springframework/amqp/rabbit/stocks/AppConfig.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/org/springframework/amqp/rabbit/stocks/Server.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/org/springframework/amqp/rabbit/stocks/web/ServletConfigurationTests.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/resources/commons-logging.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/resources/log4j.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/resources/test.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/org/springframework/amqp/rabbit/stocks/Server.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/org/springframework/amqp/rabbit/stocks/web/ServletConfigurationTests.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/springframework/amqp/rabbit/stocks/QueueConfig.class" afterPath="$PROJECT_DIR$/target/classes/org/springframework/amqp/rabbit/stocks/QueueConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/springframework/amqp/rabbit/stocks/gateway/RabbitMarketDataGateway.class" afterPath="$PROJECT_DIR$/target/classes/org/springframework/amqp/rabbit/stocks/gateway/RabbitMarketDataGateway.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/springframework/amqp/rabbit/stocks/gateway/RabbitStockServiceGateway$1.class" afterPath="$PROJECT_DIR$/target/classes/org/springframework/amqp/rabbit/stocks/gateway/RabbitStockServiceGateway$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/springframework/amqp/rabbit/stocks/gateway/RabbitStockServiceGateway.class" afterPath="$PROJECT_DIR$/target/classes/org/springframework/amqp/rabbit/stocks/gateway/RabbitStockServiceGateway.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/springframework/amqp/rabbit/stocks/handler/ServerHandler.class" afterPath="$PROJECT_DIR$/target/classes/org/springframework/amqp/rabbit/stocks/handler/ServerHandler.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/springframework/amqp/rabbit/stocks/web/QuoteController$QuoteComparator.class" afterPath="$PROJECT_DIR$/target/classes/org/springframework/amqp/rabbit/stocks/web/QuoteController$QuoteComparator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/springframework/amqp/rabbit/stocks/web/QuoteController.class" afterPath="$PROJECT_DIR$/target/classes/org/springframework/amqp/rabbit/stocks/web/QuoteController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/springframework/amqp/rabbit/stocks/AppConfig.java" afterPath="$PROJECT_DIR$/src/main/java/org/springframework/amqp/rabbit/stocks/AppConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/springframework/amqp/rabbit/stocks/QueueConfig.java" afterPath="$PROJECT_DIR$/src/main/java/org/springframework/amqp/rabbit/stocks/QueueConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/springframework/amqp/rabbit/stocks/gateway/RabbitMarketDataGateway.java" afterPath="$PROJECT_DIR$/src/main/java/org/springframework/amqp/rabbit/stocks/gateway/RabbitMarketDataGateway.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/springframework/amqp/rabbit/stocks/gateway/RabbitStockServiceGateway.java" afterPath="$PROJECT_DIR$/src/main/java/org/springframework/amqp/rabbit/stocks/gateway/RabbitStockServiceGateway.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/springframework/amqp/rabbit/stocks/handler/ServerHandler.java" afterPath="$PROJECT_DIR$/src/main/java/org/springframework/amqp/rabbit/stocks/handler/ServerHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/springframework/amqp/rabbit/stocks/web/QuoteController.java" afterPath="$PROJECT_DIR$/src/main/java/org/springframework/amqp/rabbit/stocks/web/QuoteController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/application.yml" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/application.yml" afterPath="$PROJECT_DIR$/target/classes/application.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,6 +30,11 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>test</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -69,6 +65,8 @@
         <option value="$PROJECT_DIR$/src/main/java/org/springframework/amqp/rabbit/stocks/web/HomeController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/src/main/java/org/springframework/amqp/rabbit/stocks/QueueConfig.java" />
+        <option value="$PROJECT_DIR$/src/test/java/org/springframework/amqp/rabbit/stocks/ApplicationTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/org/springframework/amqp/rabbit/stocks/web/SmokeTest.java" />
       </list>
     </option>
   </component>
@@ -145,6 +143,34 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="spring-rabbit-stocks" type="b2602c69:ProjectViewProjectNode" />
+              <item name="stocks-bootification" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-rabbit-stocks" type="b2602c69:ProjectViewProjectNode" />
+              <item name="stocks-bootification" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-rabbit-stocks" type="b2602c69:ProjectViewProjectNode" />
+              <item name="stocks-bootification" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="stocks" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-rabbit-stocks" type="b2602c69:ProjectViewProjectNode" />
+              <item name="stocks-bootification" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -163,6 +189,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources" />
       <recent name="$PROJECT_DIR$/src/main/java/org/springframework/amqp/rabbit/stocks" />
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -395,14 +422,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml.void" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/client.properties" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="23" column="10" lean-forward="false" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/springframework/amqp/rabbit/stocks/domain/Stock.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -520,39 +539,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/springframework/amqp/rabbit/stocks/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="66" lean-forward="false" selection-start-line="4" selection-start-column="66" selection-end-line="4" selection-end-column="66" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#346#347#0" expanded="true" />
-            <element signature="e#399#400#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/springframework/amqp/rabbit/stocks/QueueConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="23" column="63" lean-forward="false" selection-start-line="23" selection-start-column="57" selection-end-line="23" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/springframework/amqp/rabbit/stocks/AppConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="34" column="43" lean-forward="true" selection-start-line="34" selection-start-column="43" selection-end-line="34" selection-end-column="43" />
-          <folding>
-            <element signature="e#1646#1647#0" expanded="true" />
-            <element signature="e#1697#1698#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/springframework/amqp/rabbit/stocks/service/stubs/CreditCheckServiceStub.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -616,6 +602,97 @@
         <state relative-caret-position="234">
           <caret line="76" column="8" lean-forward="false" selection-start-line="76" selection-start-column="8" selection-end-line="76" selection-end-column="8" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/springframework/amqp/rabbit/stocks/QueueConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="23" column="63" lean-forward="false" selection-start-line="23" selection-start-column="57" selection-end-line="23" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/springframework/amqp/rabbit/stocks/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/springframework/amqp/rabbit/stocks/AppConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="56" column="24" lean-forward="false" selection-start-line="56" selection-start-column="11" selection-end-line="56" selection-end-column="24" />
+          <folding>
+            <element signature="e#1646#1647#0" expanded="true" />
+            <element signature="e#1697#1698#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="447">
+          <caret line="50" column="48" lean-forward="false" selection-start-line="50" selection-start-column="44" selection-end-line="50" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/springframework/amqp/rabbit/stocks/Server.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="28" column="13" lean-forward="false" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/springframework/amqp/rabbit/stocks/web/ServletConfigurationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/test.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/springframework/amqp/rabbit/stocks/web/SmokeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/springframework/amqp/rabbit/stocks/ApplicationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

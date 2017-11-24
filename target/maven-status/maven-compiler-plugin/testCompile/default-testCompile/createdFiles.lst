@@ -1,2 +1,2 @@
-org/springframework/amqp/rabbit/stocks/web/ServletConfigurationTests.class
-org/springframework/amqp/rabbit/stocks/Server.class
+org/springframework/amqp/rabbit/stocks/ApplicationTest.class
+org/springframework/amqp/rabbit/stocks/web/SmokeTest.class
